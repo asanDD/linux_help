@@ -6,7 +6,7 @@ Sound popping on idle bug workaround
 The sound is constantly popping when the sound card is idle. It seems that the sound card is constantly turned on and off.
 
 **Workaround:**<br>
-Turn of the powersaving function for the soundcard.<br>
+Turn off the powersaving function for the soundcard.<br>
 <br>
 Open the config for PulseAudio.<br>
 `$ sudo nano /etc/pulse/default.pa`<br>
