@@ -13,7 +13,7 @@ Create a .desktop file with the following content.<br>
     [Desktop Entry]
     Categories=Utility;
     Comment=A script to reapply the mouse settings
-    Exec=sh -c 'kcminit kcminit /usr/lib/qt/plugins/plasma/kcms/systemsettings/kcm_mouse.so'
+    Exec=sh -c 'kcminit'
     GenericName=
     Icon=input-mouse-symbolic
     MimeType=
