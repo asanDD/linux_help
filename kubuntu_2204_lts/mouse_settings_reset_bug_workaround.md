@@ -2,14 +2,13 @@
 Mouse settings reset bug workaround
 ===================================
 
-Bugreport: https://bugs.kde.org/show_bug.cgi?id=435113
-
+**Bugreport:**<br>
+https://bugs.kde.org/show_bug.cgi?id=435113 <br>
 Mouse speed resets to default settings after suspend or replugging the mouse in KDE 5.24.4
 
-**workaround:**
-
+**workaround:**<br>
 Create a .desktop file with the following content.<br>
-nano ~/.local/share/applications/apply_mouse_settings.desktop
+`$ nano ~/.local/share/applications/apply_mouse_settings.desktop`
 
     [Desktop Entry]
     Categories=Utility;
