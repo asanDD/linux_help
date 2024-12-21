@@ -1,5 +1,5 @@
  
-ksysguard: Compile on kubuntu 24.04 LTS
+ksysguard: Compile on Kubuntu 24.04 LTS
 =====================================
 
 **Description:**<br>
