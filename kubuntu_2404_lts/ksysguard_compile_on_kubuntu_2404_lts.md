@@ -13,7 +13,7 @@ KDE has dropped ksysguard in favor of their new systemmonitor. Kubuntu doesn't o
 \# cd into the folder<br>
 `cd ${HOME}/Documents/git/ksysguard`<br><br>
 \# Download ksysguard<br>
-`git --depth 1 --branch master https://github.com/KDE/ksysguard.git`<br><br>
+`git clone --depth 1 --branch master https://invent.kde.org/plasma/ksysguard.git`<br><br>
 \# cd into the ksysguard root dir<br>
 `cd ksysguard`<br><br>
 \# Install dependencies<br>
