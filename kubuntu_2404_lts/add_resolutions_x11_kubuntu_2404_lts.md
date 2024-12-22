@@ -43,18 +43,18 @@ add_resolutions() {
         new_mode_array=( $( cvt ${resolutions[$i]} ${resolutions[((i+1))]} ${resolutions[((i+2))]} ) )
         len_mode_array=${#new_mode_array[@]}
         if [[ "${new_mode_array[$index_modeline_default]}" == "Modeline" ]]; then
-            index_modeline=$((index_modeline_default + 1))
+            (( index_modeline = index_modeline_default + 1 ))
         else
             for ((index_modeline = 0 ; index_modeline < len_mode_array ; index_modeline++)); do
                 if [[ "${new_mode_array[$index_modeline]}" == "Modeline" ]]; then
-                    index_modeline=$((index_modeline + 1))
+                    (( index_modeline += 1 ))
                     break;
                 fi
             done
         fi
         if [[ "$index_modeline" < "$len_mode_array" ]]; then
             new_mode_name=$( tr -d \" <<< "${new_mode_array[$index_modeline]}" )
-            index_modeline=$((index_modeline + 1))
+            (( index_modeline += 1 ))
             # echo "$new_mode_name"
             # echo "$new_mode_name ${new_mode_array[*]:$index_modeline}"
             xrandr --newmode "$new_mode_name" ${new_mode_array[@]:$index_modeline}
@@ -63,7 +63,6 @@ add_resolutions() {
                 xrandr --addmode "$screen" "$new_mode_name"
             done
         fi
-
     done
 }
 add_resolutions  # exec the function
